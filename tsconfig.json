@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "es6", "es5", "es2017"],
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@style/*": ["style/*"],
+      "@pages/*": ["pages/*"],
+      "@layouts/*": ["layouts/*"],
+      "@public/*": ["public/*"],
+      "@static/*": ["static/*"],
+      "@store/*": ["store/*"]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": ["./src"],
+  "exclude": [
+    "node_modules/**/*",
+    ".serverless/**/*",
+    ".webpack/**/*",
+    "_warmup/**/*",
+    ".vscode/**/*",
+    "*.config.js"
+  ]
+}
